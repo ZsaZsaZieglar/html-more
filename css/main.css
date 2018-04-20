@@ -1,7 +1,48 @@
 * {
-  box-sizing: border-box;
+  box-sizing: border-box;  /* Box will be the exact amount of pixels */
 }
 
 body {
-  font: normal 16px Helvetica, Arial,
+  font: normal 16px Helvetica, Arial;
+}
+
+.nav-main {
+  background-color: grey;
+  overflow: auto;  /* hold outs height */
+}
+
+/*
+.nav-main li {
+  display: inline-block;  /*same as above elements remain inline,
+  but have block qualities
+}
+*/
+
+.nav-main li a  {
+    color: white;
+    padding: 20px;
+    display: block;
+}
+
+/* pseudo selector */
+.nav-main li a: hover; {
+  color: red;
+}
+
+.nav-main li a: {
+  background-color: blue;
+{
+
+.container-form {
+  border: 3px solid red;
+  max-width: 800px;
+  margin: 20px auto; /* Always centered */
+}
+
+p.lead {
+  margin-bottom: 6px;
+}
+
+p {
+  margin-bottom: 21px;
 }

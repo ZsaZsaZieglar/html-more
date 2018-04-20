@@ -7,11 +7,41 @@
   <body>
     <nav class="nav-main">
       <ul>
-        <li><a href="#">About</a></li>
+        <li><a href="#" target="_blank">About</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-    </nav>    
+    </nav>
+
+            <!-- Build dynamic query strings using a form -->
+    <section class="container-form">
+      <form action="https://imbd.com/find" target="_blank" method="get">
+            <!--label with for attribute, and id on input -->
+        <p class"lead"><label for="query">Enter a Query:</label></p>
+        <p><input for id="query" type="text" name="q"></p>
+
+        <!-- label wrapped around the entire bit -->
+        <label>
+          <p> for="cat">Enter a Search Category:</label></p>
+          <p>
+            <select name="s">
+              <option value="ep">TV Episodes</option>
+              <option value="tt">Title</option>
+              <option value="nm">Name</option>
+              <option value="co">Companies</option>
+              <option value="kw">Keywords</option>
+              <option value="all">All</option>
+            </select>
+          </p>
+        </label>
+                  /* Deep Links */
+        <p><input for id="cat" type="text" name="s"></p>
+
+        <p><button type="submit">Submit</button></p>
+      </form>
+      <p><a href="https://www.imdb.com/title/tt3766354/?ref_=nv_sr_2">Link to Equalizer II</a></p>
+    </section>
+
 
   </body>
 </html>
